@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Koenigsegg</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+<header>
+  <h1>Koenigsegg</h1>
+  <nav>
+    <a href="#" onclick="showPage('main')">Home</a>
+    <a href="#Models">Models</a>
+  </nav>
+</header>
+
+<div id="main">
+  <div class="section-dark">
+    <div class="content-wrapper">
+      <div class="text-block">
+        <h2>Explore Koenigsegg</h2>
+        <p>
+          Koenigsegg is all about pushing boundaries. This Swedish brand builds some of the fastest
+          and most advanced hypercars in the world – combining cutting-edge technology, bold design,
+          and pure performance. Every car is a masterpiece of engineering made for those who crave
+          something truly extraordinary.
+        </p>
+      </div>
+      <img src="koenigsegg-main-car.png" alt="Main Car Image" />
+    </div>
+  </div>
+
+  <div class="section-light">
+    <div class="content-wrapper">
+      <h2 id = "#Models">Car models</h2>
+      <div class="models">
+        <div class="model-card" onclick="showPage('cc850')">
+          <img src="cc850.png" alt="CC850" />
+          <h3>CC850</h3>
+        </div>
+        <div class="model-card" onclick="showPage('regera')">
+          <img src="regera.png" alt="Regera" />
+          <h3>Regera</h3>
+        </div>
+        <div class="model-card" onclick="showPage('jesko')">
+          <img src="jesko.png" alt="Jesko" />
+          <h3>Jesko</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="cc850" class="hidden">
+  <div class="section-dark">
+    <div class="content-wrapper section-model">
+      <div class="text-block">
+        <h2>The CC850</h2>
+        <p>
+          The CC850 blends classic design with cutting-edge tech. Inspired by the original CC8S, it
+          features Koenigsegg’s iconic silhouette with modern engineering. The Engage Shift system lets
+          you switch between a gated 6-speed manual and a 9-speed automatic – all in one car. The analog
+          chronocluster inside is a true work of art.
+        </p>
+      </div>
+      <img class="model-top-image" src="cc850.png" alt="CC850 side" />
+    </div>
+  </div>
+  <div class="specs">
+    <div class="content-wrapper specs-layout">
+      <div class="text-block">
+        <h2>Specs:</h2>
+        <p class = "specs-text">
+          Engine: Twin Turbo V8<br/>
+          Horsepower: 1385 hp<br/>
+          Torque: 1385 Nm<br/>
+          Weight: 1385 kg<br/>
+          0-100: 2.5 seconds<br/>
+          Top speed: 450 km/h
+        </p>
+      </div>
+      <div class = "cc850-img">
+        <img src="cc850-front.png" alt="CC850 front" />
+        <img src="cc850-rear.png" alt="CC850 rear" />
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="regera" class="hidden">
+  <div class="section-dark">
+    <div class="content-wrapper">
+      <div class="text-block">
+        <h2>The Regera</h2>
+        <p>
+          The Regera was built to be a luxury megacar that doesn’t compromise on power. It pairs a
+          twin-turbo V8 with three electric motors, using Koenigsegg’s unique Direct Drive system.
+          The result is a car that delivers massive hybrid performance, instant torque and surprising comfort –
+          all in one beautiful package.
+        </p>
+      </div>
+      <img src="regera.png" alt="Regera side" />
+    </div>
+  </div>
+  <div class="specs">
+    <div class="content-wrapper">
+      <div>
+        <h2>Specs:</h2>
+        <p class = "specs-text">Engine: Twin Turbo V8<br/>
+        Horsepower: 1797 hp<br/>
+        Torque: 2000 Nm<br/>
+        Weight: 1420 kg<br/>
+        0-100: 2.8 seconds<br/>
+        Top speed: 410 km/h</p>
+      </div>
+      <div class = "regera-img">
+        <img src="regera-front.png" alt="Regera front" />
+        <img src="regera-rear.png" alt="Regera rear" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="jesko" class="hidden">
+  <div class="section-dark">
+    <div class="content-wrapper">
+      <div class="text-block">
+        <h2>The Jesko</h2>
+        <p>
+          The Jesko is Koenigsegg’s ultimate track machine, named after the founder’s father.
+          It packs a 5.0L twin-turbo V8 with up to 1600hp on e85, paired with the 9-speed Light Speed
+          Transmission. With 1400kg of downforce and cutting-edge aerodynamics, the Jesko is built
+          for extreme performance.
+        </p>
+      </div>
+      <img src="jesko.png" alt="Jesko side" />
+    </div>
+  </div>
+  <div class="specs">
+    <div class="content-wrapper">
+      <div>
+        <h2>Specs:</h2>
+        <p class = "specs-text">Engine: Twin Turbo V8<br/>
+        Horsepower: 1600 hp<br/>
+        Torque: 1500 Nm<br/>
+        Weight: 1320 kg<br/>
+        0-100: 2.8 seconds<br/>
+        Top speed: 500 km/h</p>
+      </div>
+        <div class = "jesko-img">
+          <img src="jesko-front.png" alt="Jesko front" />
+          <img src="jesko-rear.png" alt="Jesko rear" />
+        </div>
+    </div>
+  </div>
+</div>
+ 
+
+<footer>
+  <p><strong>Koenigsegg</strong><br/>Driven by Innovation</p>
+</footer>
+<script src = "script.js"></script>
+
+</body>
+</html>
