@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Tamil:wght@100..900&family=Racing+Sans+One&display=swap');
+@media (max-width: 768px) {
+    .section-dark .content-wrapper, .specs .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .section-dark img, .specs img{
+        min-width: 90%;
+    }
+    .text-block {
+        max-width: 90%;
+    }
+    .specs div {
+        max-width: 90%;
+        text-align: center;
+    }
+    .models {
+        flex-direction: column;
+        align-items: center;
+    }
+    .model-card {
+        width: 90%;
+    }
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav {
+        margin-top: 1rem;
+    }
+    nav a {
+        display: inline-block;
+        margin: 0.5rem 1rem 0 0;
+    }
+}
+
+
+:root {
+    --dark-gray: #525259;
+    --medium-gray: #84848C;
+    --light-gray: #9C9FA6;
+    --almost-black: #252625;
+    --pure-black: #0D0D0D;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    background-color: white;
+    color: var(--almost-black);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  header, footer, .section-dark, .section-light, .specs {
+    width: 100%;
+  }
+
+  .content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+
+  header {
+    background-color: var(--pure-black);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+
+  header, h1 {
+      font-family: 'Racing Sans One', sans-serif;
+  }
+
+  nav a {
+    color: white;
+    margin-left: 2rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Noto Sans Tamil', sans-serif;
+    position: relative;
+    padding-bottom: 4px;
+    text-decoration: none;
+  }
+
+  nav a::after {
+        bottom: -4px;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 0;
+        position: absolute;
+        background: #fff;
+        opacity: 0.6;
+        transition: width 0.3s ease 0s, opacity 0.3s ease 0s;
+        width: 0;
+  }
+
+  nav a:hover::after{
+        width: 100%;
+        opacity: 0.9;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .section-dark {
+    background-color: var(--dark-gray);
+    color: white;
+  }
+
+  .section-dark .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .text-block {
+    max-width: 500px;
+    flex: 1;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .section-dark img {
+    width: 100%;
+    max-width: 400px;
+    flex: 1;
+  }
+
+  .section-light {
+    background-color: white;
+    color: var(--almost-black);
+    text-align: center;
+  }
+
+  .models {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  @keyframes cardEntry {
+    0% {
+      transform: scale(0.8) translateY(30px);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1) translateY(0);
+      opacity: 1;
+    }
+  }
+ .model-card:hover {
+    transition: all 0.4s ease;
+    scale: 1.02;
+    rotate: 3deg, -3deg;
+    box-shadow: 20px 10px rgba(0, 0, 0, 0.25);
+  }
+  .model-card {
+    background-color: var(--light-gray);
+    width: 250px;
+    padding: 1rem;
+    scale: 1;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    transform-style: preserve-3d;
+    animation: cardEntry 0.6s ease forwards;
+    opacity: 0;
+  }
+
+ 
+
+  .model-card img {
+    background-color: var(--almost-black);
+    padding: 1rem;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+
+  footer {
+    background-color: var(--pure-black);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem 1rem;
+    font-family: 'Racing Sans One', sans-serif;
+  }
+
+  .social-icons {
+    margin-top: 1rem;
+  }
+
+  .social-icons i {
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  .specs {
+    width: 100%;
+    background-color: white;
+  }
+
+  .specs-layout {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  
+  
+  .specs .content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  .specs .text-block {
+    flex: 1;
+    min-width: 280px;
+    max-width: 500px;
+  }
+
+  .regera-front {
+    size: 100px;
+  }
+
+  .specs-text {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .cc850-img {
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: var(--almost-black);
+    margin: 0 auto;
+  }
+
+  .regera-img {
+    width: 43%;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: var(--almost-black);
+    margin: 0 auto;
+  }
+
+  .jesko-img {
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: var(--almost-black);
+    margin: 0 auto;
+  }
+
+  .jesko-img img, .regera-img img, .cc850-img img {
+    width: 48%;
+    max-width: 350px;
+    border-radius: 10px;
+  }
+
+  
